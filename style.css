@@ -1,3 +1,20 @@
-body {
-  background-color: lightblue;
+/*
+Theme Name: Domsters Project Theme
+Author: Nataliya
+Author URI: http://kingluddite.com/
+Description: A simple theme to showcase how to build a theme from Twitter Bootstrap
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Code and take over the world line-by-line
+*/
+
+/* add css */
+function theme_styles() {
+    wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css' );
+    wp_enqueue_style( 'jumbotron_css', get_template_directory_uri() . '/css/jumbotron.css' );
+    wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 }
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
+?>
