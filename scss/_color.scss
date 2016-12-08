@@ -19,12 +19,13 @@ a:active {
   color: $storm-grey;
   background-color: #ec8;
 }
+
 header {
   color: #ec8;
   background-color: $tuna;
   border-color: #667;
 }
-#navigation {
+nav {
   color: #455;
   background-color: #789;
   border-color: #667;
@@ -34,29 +35,36 @@ header {
   background-color: #edc;
   border-color: #667;
 }
-#navigation ul {
+nav ul {
   border-color: #99a;
 }
-#navigation a:link,#navigation a:visited {
+nav a:link,nav a:visited {
   color: #eef;
   background-color: transparent;
   border-color: #99a;
 }
-#navigation a:hover {
+nav a:hover {
   color: #445;
   background-color: #eb6;
 }
-#navigation a:active {
+nav a:active {
   color: #667;
   background-color: #ec8;
 }
-#navigation a.here:link,
-#navigation a.here:visited,
-#navigation a.here:hover,
-#navigation a.here:active {
+
+nav a.current-menu-item:link,
+nav a.current-menu-item:visited,
+nav a.current-menu-item:hover,
+nav a.current-menu-item:active {
   color: #eef;
   background-color: #799;
 }
+
+nav li.current-menu-item a {
+  color: #eef;
+  background-color: #799;
+}
+
 #content img {
   border-color: #ba9;
   outline-color: #dcb;
@@ -80,3 +88,51 @@ tr.highlight td {
   color: #223;
   background-color: #cba;
 }
+
+a.post {background-color: lightblue}
+article.post {
+    background-color: $flax;
+    margin: 20px 0 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  //BLOG
+  .post h2 {
+    background: #F3904F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F3904F , #3B4371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F3904F , #3B4371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+  }
+
+  .post a:link {
+    color: $flax;
+    background: none;
+
+  }
+  .post a:visited {
+    color: #cba;
+    background: none;
+
+  }
+  .post a:hover {
+    color: #eb6;
+    background: none;
+
+  }
+  .post a:active {
+    color: blue;
+
+  }
+
+  .button {
+    background-color: #eb6;
+  }
+  .button:hover {
+    background-color: $flax;
+  }
+  .popover-content {
+    background-color: $flax;
+    color: black;
+  }

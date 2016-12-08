@@ -1,8 +1,8 @@
 /*
 Theme Name: Domsters Project Theme
 Author: Nataliya
-Author URI: http://kingluddite.com/
-Description: A simple theme to showcase how to build a theme from Twitter Bootstrap
+Author URI:
+Description: Turning Dumsters website into theme.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,3 +18,8 @@ function theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 ?>
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font: 2.4em normal;
+}

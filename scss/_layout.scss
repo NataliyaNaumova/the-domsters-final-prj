@@ -15,7 +15,14 @@ header {
   border-style: solid;
   border-bottom-width: 0;
 }
-#navigation {
+
+footer p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
   background-image: url(../images/navbar.gif);
   background-position: bottom left;
   background-repeat: repeat-x;
@@ -23,26 +30,26 @@ header {
   border-style: solid;
   border-bottom-width: 0;
   border-top-width: 0;
-  padding-left: 10%;
+  padding-left: 20%;
 }
-#navigation ul {
+nav ul {
   width: 100%;
   overflow: hidden;
   border-left-width: .1em;
   border-left-style: solid;
 }
-#navigation li {
+nav li {
   display: inline;
 }
-#navigation li a {
+nav li a {
   display: block;
   float: left;
   padding: .5em 2em;
   border-right: .1em solid;
 }
 #content {
-  border-width: .1em;
-  border-style: solid;
+  border-width: 0;
+  border-style: none;
   border-top-width: 0;
   padding: 2em 10%;
   line-height: 1.8em;
