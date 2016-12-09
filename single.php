@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-[page.php]
+[single.php]
 
 <div id="content">
   <div class="row">
@@ -18,13 +18,20 @@
          <!-- we run this else if there is no content -->
         <div class="page-header">
           <h1>Wups!</h1>
+          <p><em>By <?php the_author(); ?>
+            on <?php echo the_time('l, F jS, Y'); ?>
+            in <?php the_category( ', ' ); ?>
+            <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></em>
+          </p>
+          <hr>
+          <?php comments_template(); ?>
         </div>
 
         <p>Looks like we have no content for this page?</p>
 
       <?php endif; ?>
     </div>
-
+    <?php get_sidebar( 'blog' ); ?>
 </div>
 </div>
 
