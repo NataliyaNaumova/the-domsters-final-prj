@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-[page.php]
+
 
 <div id="content">
   <div class="row">

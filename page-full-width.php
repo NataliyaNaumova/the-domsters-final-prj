@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-[page-full.php]
+
 
 <?php get_header(); ?>
 

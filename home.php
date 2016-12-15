@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-[home.php]
 
   <div id="content">
     <div class="row">

@@ -576,7 +576,7 @@ article.post {
   padding: 10px; }
 
 .post a:link {
-  color: black;
+  color: #F3904F;
   background: none; }
 
 .post a:visited {
@@ -678,6 +678,10 @@ nav li a {
     #imagegallery {
       flex-direction: row;
       justify-content: flex-start; } }
+
+#placeholder {
+  width: 100%;
+  height: auto; }
 
 #slideshow {
   width: 150px;
