@@ -22,6 +22,7 @@ function preparePlaceholder() {
   if (!document.getElementById) return false;
   if (!document.getElementById("imagegallery")) return false;
   var placeholder = document.createElement("img");
+  placeholder.setAttribute("class","imag-fluid");
   placeholder.setAttribute("id","placeholder");
   placeholder.setAttribute('src', wsd_photos.template_url + '/images/placeholder.gif');
   placeholder.setAttribute("alt","my image gallery");

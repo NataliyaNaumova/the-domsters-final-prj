@@ -16,7 +16,7 @@
 
 
 <body <?php body_class();?>>
-  <header>
+  <header class="header">
     <img src="<?php bloginfo('template_directory');?>/images/logo.gif" alt="Jay Skript and the Domsters" />
   </header>
 

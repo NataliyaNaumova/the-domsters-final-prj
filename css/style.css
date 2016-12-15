@@ -609,13 +609,31 @@ body {
   background-repeat: repeat-x;
   max-width: 80em; }
 
-header {
+.header {
   background-image: url(../images/guitarist.gif);
   background-repeat: no-repeat;
   background-position: bottom right;
   border-width: .1em;
   border-style: solid;
   border-bottom-width: 0; }
+
+.page-id-7 .header {
+  background-image: url(../images/lineup.gif); }
+
+.page-id-9 .header {
+  background-image: url(../images/basshead.gif); }
+
+.page-id-11 header {
+  background-image: url(../images/bassist.gif); }
+
+.page-id-13 header {
+  background-image: url(../images/drummer.gif); }
+
+#content img {
+  border-width: .1em;
+  border-style: solid;
+  outline-width: .1em;
+  outline-style: solid; }
 
 footer p {
   padding: 0;
@@ -629,8 +647,7 @@ nav {
   border-width: .1em;
   border-style: solid;
   border-bottom-width: 0;
-  border-top-width: 0;
-  padding-left: 20%; }
+  border-top-width: 0; }
 
 nav ul {
   width: 100%;
@@ -639,13 +656,13 @@ nav ul {
   border-left-style: solid; }
 
 nav li {
-  display: inline; }
+  list-style: none; }
 
 nav li a {
   display: block;
-  float: left;
   padding: .5em 2em;
-  border-right: .1em solid; }
+  border-right: .1em solid;
+  text-align: center; }
 
 #content {
   border-width: 0;
@@ -654,26 +671,13 @@ nav li a {
   padding: 2em 10%;
   line-height: 1.8em; }
 
-#about header {
-  background-image: url(../images/lineup.gif); }
-
-#photos header {
-  background-image: url(../images/basshead.gif); }
-
-#live header {
-  background-image: url(../images/bassist.gif); }
-
-#contact header {
-  background-image: url(../images/drummer.gif); }
-
-#content img {
-  border-width: .1em;
-  border-style: solid;
-  outline-width: .1em;
-  outline-style: solid; }
-
-#imagegallery li {
-  display: inline; }
+#imagegallery {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 800px) {
+    #imagegallery {
+      flex-direction: row;
+      justify-content: flex-start; } }
 
 #slideshow {
   width: 150px;
@@ -723,5 +727,13 @@ ul {
 
 .main-nav a:hover {
   text-decoration: none; }
+
+nav .main-nav {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 800px) {
+    nav .main-nav {
+      flex-direction: row;
+      justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
